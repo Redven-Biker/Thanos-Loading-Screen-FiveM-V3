@@ -51,26 +51,16 @@
 
   <script>
     var play = false;
-    var myAudio = document.getElementById("loading");
-
-    myAudio.volume = 0.1;
-
-
-    function onKeyDown(event) {
-      switch (event.keyCode) {
-        case 32: //SpaceBar                    
-          if (play) {
-            myAudio.pause();
-            play = false;
-          } else {
-            myAudio.play();
-            play = true;
-          }
-          break;
-      }
-      return false;
-    }
-    window.addEventListener("keydown", onKeyDown, false);
+            var vid = document.getElementById("loading");
+            vid.volume = 0.3;
+            window.addEventListener('keyup', function(e)
+            {
+                if (e.which == 69){
+                    vid.volume = Math.min(vid.volume + 0.1,1);
+                } else if(e.which == 65){
+                    vid.volume = Math.max(vid.volume - 0.1,0);
+                };
+            });
   </script>
 </body>
 

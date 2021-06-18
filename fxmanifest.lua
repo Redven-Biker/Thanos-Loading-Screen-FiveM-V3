@@ -12,12 +12,12 @@ client_script 'client.lua'
 files {
     'index.html',
     'style.css',
-    'script.js',
     'img/logo.png',
     'img/partenaire.jpg',
     'img/icons/discord.png',
     'img/icons/gamemode.png',
     'img/icons/user.png',
     'img/icons/www.png',
-    'music/music.mp3'
+    'music/music.mp3',
+    'video/video.mp4'
 }
